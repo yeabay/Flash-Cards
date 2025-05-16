@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> FlashCards </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./flashCards.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="whole">
+            <div class="header">
+              <div class="flashtext">
+                   <p> Flash Cards</p>
+              </div>
+              <div class="progressbar">
+                  <div class="barandnum">
+                      <div class="bar"></div>
+                      <p class="progressnum"> 25%</p>
+                  </div>
+                  <div class="cardnum"> <p> 5 out of 20</p></div>  
+              </div>
+            </div>
+
+
+
+            <div class="card">
+              <div class="cardmain">
+                    <div class="questionbox"><p class="question"> question Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptatum blanditiis ipsum officia obcaecati nobis beatae, rem reprehenderit sint veniam modi similique voluptatem. Esse facere doloribus perspiciatis cum natus sit?</p>
+                    </div>
+                    <div class="answerbox" hidden>
+                        <p class="answer" > answer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptatum blanditiis ipsum officia obcaecati nobis beatae, rem reprehenderit sint veniam modi similique voluptatem. Esse facere doloribus perspiciatis cum natus sit?</p>
+                    </div>
+              </div>
+              <div class="options">
+            
+                    
+                <button class="prev"> <i class="fa fa-caret-left"></i> Previous</button>
+                
+
+                <button class ="show">Show Answer</button>
+                <button class ="hide" hidden>Hide Answer</button>
+             
+                    
+                <button class="next">Next <i class="fa fa-caret-right"></i> </button>
+                    
+            
+                
+              </div>
+            </div>
+    
+        </div>
+    <script src ="flashCards.js"></script>  
+    </body>
+</html>

@@ -1,0 +1,166 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root{
+--font:'Inter', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+   align-items: center;
+   background-color: rgb(198, 181, 231);
+   display: flex;
+   flex-direction:column;
+
+   
+}
+.whole{
+    margin-top: 50px;
+    padding: 20px;
+     background-color: rgb(177, 156, 219);
+     border-radius: 5px;
+     display: flex;
+     flex-direction: column;
+     min-height:50%;
+     max-width:50%;
+
+
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+
+}
+.flashtext{
+    padding-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size:14 px;
+    line-height: 1.6;
+    font-weight:700;
+
+}
+.progressbar{
+    padding:2px;
+    display:flex;
+    border-radius: 7px;
+    border: 2px solid grey;
+    justify-content: space-between;
+}
+.barandnum{
+    gap: 5px;
+    display: flex;
+
+}
+.bar{
+    width: 60px;
+    height:100%;
+    background-color: gray;
+    border-radius: 5px;
+}
+.progressnum{
+    font-size: 10px;
+    font-family: var(--font);
+}
+.cardnum{
+    padding-right: 5px;
+    font-size: 10px;
+    font-family: var(--font);
+}
+
+
+.card{
+
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: var(--font);
+    border-radius: 7px;
+    border: 2px solid grey;
+    padding:3px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+.cardmain{
+    background-color: rgb(231, 228, 236);
+    color: white;
+    border-radius: 7px;
+    border:none;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+    
+}
+.card.flipped .cardmain{
+  transform: rotateY(180deg);
+}
+.card.slide-right .cardmain{
+    transform: translateX(100%);
+}
+.card.slide-left .cardmain{
+    transform: translateX(-100%);
+}
+.card.slide-in .cardmain{
+    transform: translateX(0%);
+}
+.questionbox{
+    border-radius: 7px;
+    border:none;
+    background-color: mediumpurple;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 25px;
+    text-align: center;
+    backface-visibility: hidden;
+    color: white;
+}
+.answerbox{
+    display:hidden;
+    border-radius: 7px;
+    border:none;
+    color: white;
+    background-color: mediumpurple;
+    align-items: center;
+    padding: 35px 25px;
+    text-align: center;
+    perspective: 1000px;
+    
+    
+}
+.options{
+    padding: 5px 7px;
+    margin-top: 5px;
+    border-radius: 7px;
+    border:none;
+    background-color: rgb(186, 171, 218);
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.options button{
+     border:none;
+     background: transparent;
+     font-size: 13px;
+     cursor: pointer;
+}
+.options button:hover{
+     
+     transform: scale(1.2);
+}
+.show{
+    color:white;
+}
+     
+.prev{
+    color: grey;
+    
+}
+
+.next{
+    color: grey;
+}
+
+
+/*<i class="fa-solid fa-arrow-left"></i>
+
